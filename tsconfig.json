@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "ES2023",
+    "useDefineForClassFields": true,
+    "module": "nodenext",
+    "lib": ["ES2023"],
+    //"skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "nodenext",
+    //"allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "moduleDetection": "force",
+    //"noEmit": true,
+
+    /* Linting */
+    "strict": true,              // Enable all strict type-checking options
+    "noImplicitAny": true,       // Disallow variables with implicit 'any' type
+    "strictNullChecks": true,    // Ensure null and undefined are handled explicitly
+    //"noUnusedLocals": true,
+    //"noUnusedParameters": true,
+    //"erasableSyntaxOnly": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true
+  },
+  "include": ["src"]
+}
