@@ -40,6 +40,7 @@ resource "aws_lambda_function" "bot_lambda" {
       BOT_NAME = local.bot_name
       BOT_TOKEN = module.config_from_env.ssm_param_arns["BOT_TOKEN"]
       GSERVICEACCOUNT = module.config_from_env.ssm_param_arns["GSERVICEACCOUNT"]
+      NODE_OPTIONS = "--no-deprecation"
     }
   }
 
